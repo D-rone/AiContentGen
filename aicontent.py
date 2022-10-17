@@ -1,4 +1,5 @@
 import os
+# import openai
 import openai
 import config
 
@@ -6,6 +7,7 @@ openai.api_key = config.OPENAI_API_KEY
 
 
 def productDescription(query):
+    
     response = openai.Completion.create(
         engin = "davinci-instruct-beta-v3",
         prompt = " {}".format(query), ################################## NEED TO ADD THIS KEY FROM YOUR OPENAI ACCOUNT before {} !!!!!!!!!!!!

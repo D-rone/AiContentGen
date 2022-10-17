@@ -35,10 +35,9 @@ def jobDescription():
 
     if request.method == 'POST':
         query = request.form['jobDescription']
-        print(query)
+        openAIAnswer = aicontent.productDescription(query)
 
         prompt = 'AI Suggestions for {} are:'.format(query)
-        openAIAnswer = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
     return render_template('job-description.html', **locals())
 
@@ -49,10 +48,9 @@ def tweetIdeas():
 
     if request.method == 'POST':
         query = request.form['tweetIdeas']
-        print(query)
+        openAIAnswer = aicontent.productDescription(query)
 
         prompt = 'AI Suggestions for {} are:'.format(query)
-        openAIAnswer = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
     return render_template('tweet-ideas.html', **locals())
 
@@ -63,10 +61,9 @@ def coldEmails():
 
     if request.method == 'POST':
         query = request.form['coldEmails']
-        print(query)
+        openAIAnswer = aicontent.productDescription(query)
 
         prompt = 'AI Suggestions for {} are:'.format(query)
-        openAIAnswer = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
     return render_template('cold-emails.html', **locals())
 
@@ -77,10 +74,9 @@ def socialMedia():
 
     if request.method == 'POST':
         query = request.form['socialMedia']
-        print(query)
+        openAIAnswer = aicontent.productDescription(query)
 
         prompt = 'AI Suggestions for {} are:'.format(query)
-        openAIAnswer = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
     return render_template('social-media.html', **locals())
 
@@ -90,10 +86,9 @@ def businessPitch():
 
     if request.method == 'POST':
         query = request.form['businessPitch']
-        print(query)
+        openAIAnswer = aicontent.productDescription(query)
 
         prompt = 'AI Suggestions for {} are:'.format(query)
-        openAIAnswer = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
     return render_template('business-pitch.html', **locals())
 
@@ -103,10 +98,9 @@ def videoIdeas():
 
     if request.method == 'POST':
         query = request.form['videoIdeas']
-        print(query)
+        openAIAnswer = aicontent.productDescription(query)
 
         prompt = 'AI Suggestions for {} are:'.format(query)
-        openAIAnswer = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
     return render_template('video-ideas.html', **locals())
 
@@ -116,11 +110,9 @@ def videoDescription():
 
     if request.method == 'POST':
         query = request.form['videoDescription']
-        print(query)
+        openAIAnswer = aicontent.productDescription(query)
 
         prompt = 'AI Suggestions for {} are:'.format(query)
-        openAIAnswer = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-
     return render_template('video-description.html', **locals())
 
 
