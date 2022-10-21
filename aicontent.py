@@ -5,7 +5,7 @@ import config
 openai.api_key = config.OPENAI_API_KEY
 
 
-def openAiQuer(query):
+def openAiQuery(query):
     response = openai.Completion.create(
         engin = "davinci-instruct-beta-v3",
         prompt = query, 
@@ -25,5 +25,3 @@ def openAiQuer(query):
 
     return(answer)
 
-def openAiQuery(query):
-    return query
